@@ -1,0 +1,117 @@
+
+body {
+    font-family: 'Azeret Mono', monospace;
+    background-color: 14365D;
+    color: #fff;
+    max-width: 1600px;
+    height: auto;
+    margin: auto;
+    border: 2px #fff solid;
+}
+
+main {
+    border: 2px dotted purple;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-top: 20px solid #D82727;
+}
+
+a {
+    text-decoration: none;
+    color:#fff;
+    font-size: 24px;
+}
+
+img {
+    color:black;
+    box-shadow: 25px 20px 4px;
+}
+
+.top {
+    background-color: #14365D;
+    display:flex;
+    justify-content: center;
+}
+
+#title {
+    color: black;
+    background-color: #D82727;
+    margin-bottom: 3%;
+    box-shadow: 25px 20px 10px;
+}
+
+#title h1 {
+    font-size: 54px;
+}
+
+.center{
+    display: flex;
+    flex:1;
+    justify-content: space-around;
+    
+}
+
+.btn {
+    display: flex;
+    align-items: start;
+    gap: 24px;
+    position: relative;
+    right: 10%;
+    /* border: 2px dotted red; */
+    
+}
+
+button {
+    background-color: #D82727;
+    color:black;
+    width: 200px;
+    height: 55px;
+    font-size: 24px;
+    font-weight: bolder;
+    box-shadow: 15px 20px 4px;
+    cursor: pointer;
+}
+  
+  #aboutBtn:hover {
+    background-color: #fff;
+  }
+  
+  #aboutBtn:active {
+    background-color: #D82727;
+    box-shadow: 0 5px #000;
+    transform: translateY(4px);
+  }
+
+  #contactBtn:hover {
+    background-color: #fff;
+    
+}
+  
+  #contactBtn:active {
+    background-color: #D82727;
+    box-shadow: 0 5px #000;
+    transform: translateY(4px);
+  }
+
+.aboutInfo {
+    background-color: #000;
+    height: 350px;
+    margin-bottom: 5%;
+}
+
+.contactInfo {
+    background-color: #D82727;
+    height: 350px;
+}
+
+.contactInfo a {
+    gap: 45px;
+}
