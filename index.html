@@ -27,8 +27,8 @@
             </div>
             <div class="main-left">
                 <div class="btn">
-                    <button id="aboutBtn" onclick="aboutSection()">About Me</button>
-                    <button id="contactBtn" onclick="contactSection()">Contact Me</button>
+                    <!-- <button id="aboutBtn" onclick="aboutSection()">About Me</button>
+                    <button id="contactBtn" onclick="contactSection()">Contact Me</button> -->
                 </div>
                 <div id="projects">
                     <h1>Projects:</h1>
@@ -41,9 +41,9 @@
             <div id="aboutTitle">
                 <h1>About Me</h1>
             </div>
-            <p>I'm from Friona, TX recently graduated from Innovatioin Outpost at
-                Amarillo College. I love sports and coding. my favorite sport is baseball
-                and soccer. I am a Junir Full-Stack Developer looking for my next Challenge.
+            <p> I'm from Friona, TX. I recently graduated from Innovation Outpost at
+                Amarillo College. I love sports and coding. My favorite sport is baseball
+                and soccer. I am a Junior Full-Stack Developer looking for my next Challenge.
             </p>
         </div>
         <div class="contactBox">
@@ -79,7 +79,7 @@
                                 <input type="text" name="reply_to" id="reply_to">
                             </div>
                             <div class="boxAndButton">
-                                <textarea id="Message" name="subject" placeholder="Write something.."
+                                <textarea id="Message" name="message" placeholder="Write something.."
                                     style="height:200px"></textarea>
                                 <input type="submit" id="button" value="Send Email">
                             </div>
@@ -97,16 +97,17 @@
                             document.getElementById('form')
                                 .addEventListener('submit', function (event) {
                                     event.preventDefault();
-                                    form.reset()
+                                  
 
                                     btn.value = 'Sending...';
 
                                     const serviceID = 'service_c616rbb';
                                     const templateID = 'template_ppjxdui';
 
-                                    emailjs.sendForm(serviceID, templateID, this)
+                                    emailjs.sendForm(serviceID, templateID, "#form")
                                         .then(() => {
                                             btn.value = 'Send Email';
+                                            form.reset()
                                             //   alert('Sent!');
                                         }, (err) => {
                                             btn.value = 'Send Email';

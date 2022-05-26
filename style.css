@@ -145,11 +145,6 @@ button {
 
 }
 
-/* #linkList {
-    display: flex;
-    flex-direction: column;
-} */
-
 .contactBox a {
     color: black;
 
@@ -227,7 +222,9 @@ textarea {
 
 
 .boxAndButton input {
-    color: blue;
+    color: black;
+    font-size: large;
+    font-weight: 700;
     display: flex;
     width: 15rem;
     height: 50px;
