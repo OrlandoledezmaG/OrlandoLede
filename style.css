@@ -1,7 +1,8 @@
+/* basics elements section */
 
 body {
     font-family: 'Azeret Mono', monospace;
-    background-color: 14365D;
+    background-color: #808080;
     color: #fff;
     max-width: 1600px;
     height: auto;
@@ -10,8 +11,8 @@ body {
 }
 
 main {
-    border: 2px dotted purple;
     height: 100%;
+    background-color: #000;
 }
 
 nav {
@@ -21,29 +22,29 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
-    border-top: 20px solid #D82727;
+    border-top: 20px solid #1BD7BB;
 }
 
 a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     font-size: 24px;
 }
 
 img {
-    color:black;
+    color: black;
     box-shadow: 25px 20px 4px;
 }
 
 .top {
-    background-color: #14365D;
-    display:flex;
+
+    display: flex;
     justify-content: center;
 }
 
 #title {
     color: black;
-    background-color: #D82727;
+    background-color: #1BD7BB;
     margin-bottom: 3%;
     box-shadow: 25px 20px 10px;
 }
@@ -52,12 +53,14 @@ img {
     font-size: 54px;
 }
 
-.center{
+.center {
     display: flex;
-    flex:1;
+    flex: 1;
     justify-content: space-around;
-    
+
 }
+
+/* Button section */
 
 .btn {
     display: flex;
@@ -66,52 +69,179 @@ img {
     position: relative;
     right: 10%;
     /* border: 2px dotted red; */
-    
+
 }
 
 button {
-    background-color: #D82727;
-    color:black;
+    background-color: #1BD7BB;
+    color: black;
     width: 200px;
     height: 55px;
     font-size: 24px;
     font-weight: bolder;
     box-shadow: 15px 20px 4px;
     cursor: pointer;
-}
-  
-  #aboutBtn:hover {
-    background-color: #fff;
-  }
-  
-  #aboutBtn:active {
-    background-color: #D82727;
-    box-shadow: 0 5px #000;
-    transform: translateY(4px);
-  }
 
-  #contactBtn:hover {
-    background-color: #fff;
-    
 }
-  
-  #contactBtn:active {
-    background-color: #D82727;
+
+#contactBtn:hover {
+    background-color: #fff;
+
+}
+
+#contactBtn:active {
+    background-color: #1BD7BB;
     box-shadow: 0 5px #000;
     transform: translateY(4px);
-  }
+}
+
+#aboutBtn:hover {
+    background-color: #fff;
+}
+
+#aboutBtn:active {
+    background-color: #1BD7BB;
+    box-shadow: 0 5px #000;
+    transform: translateY(4px);
+}
+
+/* About me Box */
+
 
 .aboutInfo {
     background-color: #000;
     height: 350px;
     margin-bottom: 5%;
+    text-align: center;
+}
+
+#aboutTitle {
+    border-bottom: 2px solid #fff;
+}
+
+.aboutInfo p {
+    font-size: 24px;
+}
+
+/* Contact me Box */
+
+
+.contactBox {
+    display: flex;
+    flex-direction: column;
+    background-color: #1BD7BB;
+
+}
+
+#contactTitle {
+    border-bottom: 2px solid #000;
+    text-align: center;
+
 }
 
 .contactInfo {
-    background-color: #D82727;
-    height: 350px;
+    display: flex;
+    justify-content: center;
+
 }
 
-.contactInfo a {
+/* #linkList {
+    display: flex;
+    flex-direction: column;
+} */
+
+.contactBox a {
+    color: black;
+
+}
+
+
+/* Form section */
+
+
+label {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+
+#form {
+    margin-top: 5%;
+    flex-wrap: wrap;
+
+}
+
+
+
+input,
+textarea {
+    border: 5px solid black;
+
+    border-radius: 5px;
+
+}
+
+.fullName {
+    margin-bottom: 1%;
+}
+
+.fullName input {
+    height: 35px;
+
+}
+
+.nameAndLast {
+    display: flex;
+    flex-direction: column;
+}
+
+.userEmail {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.userEmail input {
+    height: 35px;
+}
+
+textarea {
+    border-radius: 10px;
+    width: 450px;
+
+}
+
+.fullName {
+    display: flex;
     gap: 45px;
+}
+
+.boxAndButton {
+    margin-top: 1%;
+    display: flex;
+
+    gap: 45px;
+    align-items: center;
+}
+
+
+.boxAndButton input {
+    color: blue;
+    display: flex;
+    width: 15rem;
+    height: 50px;
+    background-image: linear-gradient(to right bottom, #ff0038, #ff5f0b, #fe9400, #ecc200, #cfeb12);
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-top: 20px solid #1BD7BB;
 }

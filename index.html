@@ -13,15 +13,7 @@
 
 <body>
     <nav>
-        <div class="home">
-            <a href="#">Home</a>
-        </div>
-        <div class="aboutMe">
-            <a href="#">About</a>
-        </div>
-        <div class="contactMe">
-            <a href="#">Contact</a>
-        </div>
+
     </nav>
     <main>
         <div class="top">
@@ -33,28 +25,106 @@
             <div id="photo">
                 <img src="images/Profilepic3.jpg">
             </div>
-            <div class="btn">
-                <button id="aboutBtn" onclick = "aboutSection()">About Me</button>
-                <button id="contactBtn" onclick = "contactSection()">Contact Me</button>
+            <div class="main-left">
+                <div class="btn">
+                    <button id="aboutBtn" onclick="aboutSection()">About Me</button>
+                    <button id="contactBtn" onclick="contactSection()">Contact Me</button>
+                </div>
+                <div id="projects">
+                    <h1>Projects:</h1>
+                    <img src="images/ABCHomePage.png">
+                </div>
             </div>
         </div>
-        
-    </main>
-    <div class = "aboutInfo">
-        <div id = "aboutTitle">
-            <h1>About Me</h1>
-        </div>
-        <p>text</p>
-    </div>
-    <div class = "contactInfo">
-        <div id = "contactTitle">
-            <h1>Contact me</h1>
-        </div>
-        <a href="mailto:orlando3ledezma@gmail.com">orlando3ledezma@gmail.com</a>
-        <a href = "https://github.com/OrlandoledezmaG?tab=repositories">github</a>
-        <a href = "https://www.linkedin.com/in/orlando-ledezma-7aa78323a/">Linkedin</a>
-    </div>    
 
-    <script src = "script.js"></script>
+        <div class="aboutInfo">
+            <div id="aboutTitle">
+                <h1>About Me</h1>
+            </div>
+            <p>I'm from Friona, TX recently graduated from Innovatioin Outpost at
+                Amarillo College. I love sports and coding. my favorite sport is baseball
+                and soccer. I am a Junir Full-Stack Developer looking for my next Challenge.
+            </p>
+        </div>
+        <div class="contactBox">
+            <div id="contactTitle">
+                <h1>Contact me</h1>
+            </div>
+            <div class="contactInfo">
+                <!-- <div id="linkList">
+                    <a href="mailto:orlando3ledezma@gmail.com">Email</a>
+                    <a href="https://github.com/OrlandoledezmaG?tab=repositories">Github</a>
+                    <a href="https://www.linkedin.com/in/orlando-ledezma-7aa78323a/">Linkedin</a>
+                </div> -->
+                <div class="MessageUsTitle">
+
+                    <div id="contactForm">
+
+                        <form id="form">
+
+
+                            <div class="fullName">
+                                <div class="nameAndLast">
+
+                                    <label id="labelName" for="from_name">First</label>
+                                    <input type="text" name="from_name" id="from_name">
+                                </div>
+                                <div class="nameAndLast">
+                                    <label id="labelName" for="from_lastName">Last</label>
+                                    <input type="text" name="from_lastName" id="from_lastName">
+                                </div>
+                            </div>
+                            <div class="userEmail">
+                                <label for="reply_to">Email</label>
+                                <input type="text" name="reply_to" id="reply_to">
+                            </div>
+                            <div class="boxAndButton">
+                                <textarea id="Message" name="subject" placeholder="Write something.."
+                                    style="height:200px"></textarea>
+                                <input type="submit" id="button" value="Send Email">
+                            </div>
+
+                        </form>
+
+                        <script type="text/javascript"
+                            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+                        <script type="text/javascript">
+                            emailjs.init('SOg6K0LVjIgg6idIQ')
+                            const btn = document.getElementById('button');
+
+
+                            document.getElementById('form')
+                                .addEventListener('submit', function (event) {
+                                    event.preventDefault();
+                                    form.reset()
+
+                                    btn.value = 'Sending...';
+
+                                    const serviceID = 'service_c616rbb';
+                                    const templateID = 'template_ppjxdui';
+
+                                    emailjs.sendForm(serviceID, templateID, this)
+                                        .then(() => {
+                                            btn.value = 'Send Email';
+                                            //   alert('Sent!');
+                                        }, (err) => {
+                                            btn.value = 'Send Email';
+                                            alert(JSON.stringify(err));
+                                        });
+                                });
+                        </script>
+                    </div>
+
+                </div>
+
+            </div>
+            <footer>
+
+            </footer>
+
+    </main>
+    <script src="script.js"></script>
 </body>
+
 </html>
