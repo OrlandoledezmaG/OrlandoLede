@@ -83,26 +83,6 @@ button {
     cursor: pointer;
 
 }
-/* 
-#contactBtn:hover {
-    background-color: #fff;
-
-}
-
-#contactBtn:active {
-    background-color: #1BD7BB;
-    box-shadow: 0 5px #000;
-    transform: translateY(4px);
-}
-
-#aboutBtn:hover {
-    background-color: #fff;
-}
-
-#aboutBtn:active {
-    background-color: #1BD7BB;
-    box-shadow: 0 5px #000;
-    transform: translateY(4px); */
 
 /* About me Box */
 
@@ -129,6 +109,7 @@ button {
     display: flex;
     flex-direction: column;
     background-color: #1BD7BB;
+    border: 2px #fff solid;
 
 }
 
