@@ -264,7 +264,17 @@ footer {
         font-size: 48px;
    
     }
+
+    #title h1{
+        text-align: center;
+    }
     
+    #projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .center {
         flex-wrap: wrap;
