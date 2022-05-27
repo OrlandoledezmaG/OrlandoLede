@@ -83,7 +83,7 @@ button {
     cursor: pointer;
 
 }
-
+/* 
 #contactBtn:hover {
     background-color: #fff;
 
@@ -102,8 +102,7 @@ button {
 #aboutBtn:active {
     background-color: #1BD7BB;
     box-shadow: 0 5px #000;
-    transform: translateY(4px);
-}
+    transform: translateY(4px); */
 
 /* About me Box */
 
@@ -172,7 +171,6 @@ label {
 input,
 textarea {
     border: 5px solid black;
-
     border-radius: 5px;
 
 }
@@ -241,4 +239,89 @@ footer {
     align-items: center;
     gap: 20px;
     border-top: 20px solid #1BD7BB;
+}
+
+@media(max-width: 500px){
+    
+    body {
+        font-family: 'Azeret Mono', monospace;
+        background-color: #000;
+        color: #fff;
+        max-width: 1600px;
+        height: auto;
+        margin: auto;
+        border: 2px #fff solid;
+    }
+
+    #title {
+        color: black;
+        background-color: #1BD7BB;
+        margin-bottom: 3%;
+        box-shadow: 25px 20px 10px;
+    }
+
+    #title h1 {
+        font-size: 48px;
+   
+    }
+    
+
+    .center {
+        flex-wrap: wrap;
+    }
+
+    /* About section */
+
+    
+
+.aboutInfo {
+    background-color: #000;
+    height: 450px;
+    margin-bottom: 5%;
+
+}
+
+#aboutTitle {
+    border-bottom: 2px solid #fff;
+}
+
+.aboutInfo p {
+    font-size: 24px;
+}
+
+/* contact page */
+
+#form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullName {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;;
+}
+
+.userEmail {
+    width: 250px;
+    margin-bottom: 1%;
+}
+
+textarea {
+    border-radius: 10px;
+    width: 350px;
+}
+
+.boxAndButton {
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 }
