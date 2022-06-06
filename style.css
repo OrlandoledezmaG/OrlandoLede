@@ -252,7 +252,22 @@ footer {
 
     img {
         width: 50%;
+        
     }
+
+    #photo {
+     display: flex;
+     justify-content: center;
+    }
+
+    #photo img{
+        border-radius: 50%;
+    }
+
+#projects a {
+    display: flex;
+    justify-content: center;
+}
 
     #title {
         color: black;
