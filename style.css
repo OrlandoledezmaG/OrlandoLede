@@ -238,6 +238,19 @@ footer {
     border-top: 20px solid #1BD7BB;
 }
 
+@media(max-width: 800px) {
+   
+.center{
+justify-self: center;
+flex-wrap: wrap;
+} 
+
+img {
+    width:80%;
+}
+
+}
+
 @media(max-width: 500px){
     
     body {
