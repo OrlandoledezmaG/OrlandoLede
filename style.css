@@ -34,6 +34,7 @@ a {
 img {
     color: black;
     box-shadow: 25px 20px 4px;
+  
 }
 
 .top {
@@ -210,6 +211,21 @@ textarea {
     background-image: linear-gradient(to right bottom, #ff0038, #ff5f0b, #fe9400, #ecc200, #cfeb12);
 }
 
+/* links section */
+.linksSec {
+    background-color: #2af598;
+    text-align: center;
+}
+
+.perWebLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#githubLink {
+margin-bottom: 1%;
+}
 
 /* footer */
 footer {
@@ -232,6 +248,10 @@ footer {
         height: auto;
         margin: auto;
         border: 2px #fff solid;
+    }
+
+    img {
+        width: 50%;
     }
 
     #title {
