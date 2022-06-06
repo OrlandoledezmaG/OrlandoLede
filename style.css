@@ -261,6 +261,7 @@ img {
         height: auto;
         margin: auto;
         border: 2px #fff solid;
+        border-bottom: none;
     }
 
     img {
