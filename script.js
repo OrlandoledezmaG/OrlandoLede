@@ -1,13 +1,13 @@
-function aboutSection() {
-    document.getElementById('aboutTitle').scrollIntoView()
-    console.log("hi")
-}
+// function aboutSection() {
+//     document.getElementById('aboutTitle').scrollIntoView()
+//     console.log("hi")
+// }
 
-aboutSection()
+// aboutSection()
 
-function contactSection() {
-    document.getElementById('contactTitle').scrollIntoView()
-    console.log("hi")
-}
+// function contactSection() {
+//     document.getElementById('contactTitle').scrollIntoView()
+//     console.log("hi")
+// }
 
-contactSection()
+// contactSection()
